@@ -1,0 +1,2 @@
+char.IsDigit(char х) - проверява дали "х" е число;
+string.Contains(string value) - проверява дали стринга съдържа търсените елементи;

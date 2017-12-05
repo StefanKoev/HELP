@@ -1,0 +1,12 @@
+Int[] numbers =
+
+Console.ReadLine()
+.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+.Select(x => int.Parse(x))
+.ToArray();
+
+
+or
+
+Console.ReadLine().
+Split(' ').Select(int.Parse).ToArray();

@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace String_Examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = "Gosho, Pesho,    Mimi> Sasho;. #$%^#$%Ivi^&*^&* Mia";
+            string[] parts = Regex.Split(input, @"\W+");
+            for (int i = 0; i < parts.Length; i++)
+            {
+                Console.WriteLine(parts[i]);
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+....
+double totalTimeInSeconds = ....
+
+TimeSpan time = TimeSpan.FromSeconds(totalTimeInSeconds);
+            string timeResult = string.Format("{0:d1}:{1:d2}:{2:d2}:{3:d2}",
+                time.Days,
+                time.Hours,
+                time.Minutes,
+                time.Seconds);
+            Console.WriteLine(timeResult);

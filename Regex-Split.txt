@@ -1,0 +1,22 @@
+using System;
+using System.Text.RegularExpressions;
+
+public class Example
+{
+    public static void Main()
+    {
+        string input = @"1
+
+        2 3   , ;
+    pesho
+
+4";
+
+        string pattern = @"[,;\s]+";
+
+        string[] result = Regex.Split(input, pattern);
+        Console.WriteLine(string.Join(", ", result));
+	//1, 2, 3, pesho, 4
+    }
+}
+
